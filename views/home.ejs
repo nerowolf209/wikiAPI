@@ -1,0 +1,20 @@
+<%- include("header") -%>
+
+<div class="box">
+    <h1>Welcome to the wiki pages</h1>
+    <p>Here you will find articles about my API learning journey</p>
+</div>
+
+<% articlePost.forEach(element => { %>
+    <div class="box">
+        <ul>
+            <h2><%= element.title %>:</h2>
+            <div>
+                <p><%= element.content %></p>
+            </div>
+        </ul>
+    </div>
+<%});%>
+
+
+<%- include("footer") -%>
